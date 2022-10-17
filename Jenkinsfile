@@ -13,8 +13,8 @@ pipeline {
                 echo "Npm packages are starting to install"
                 sh "sudo npm install"
                 //sh "sudo chmod -R 777 ${WORKSPACE}/node_modules"
-                sh "npm run start"
-                echo "Start  process completed"
+                sh "npm run build"
+                echo "build  process completed"
             }
         }
         //stage 2 : Test
