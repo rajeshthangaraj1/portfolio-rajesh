@@ -1,4 +1,5 @@
-FROM node:alpine
+FROM alpine:3.16
+ENV NODE_VERSION 16.18.0
 
 # set working directory
 WORKDIR /usr/src/portfolio

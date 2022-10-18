@@ -17,13 +17,21 @@ pipeline {
                 echo "build  process completed"
             }
         }
-        //stage 2 : Test
-        //stage 3 : Deploy
-        stage('Deploy') {
+        stage('DockerBuild') {
             steps {
-                sh './scripts/deploy.sh'
-                echo 'Docker success'
+                echo "Docker build started"
+                sh "docker build -t portfolio ."
+                sh "docker run -p 3000:3000 -d portfolio"
+                echo "build  process completed"
             }
         }
+        //stage 2 : Test
+        //stage 3 : Deploy
+        // stage('Deploy') {
+        //     steps {
+        //         sh './scripts/deploy.sh'
+        //         echo 'Docker success'
+        //     }
+        // }
     }
 }
