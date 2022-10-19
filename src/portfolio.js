@@ -19,7 +19,7 @@ const seo = {
 
 //Home Page
 const greeting = {
-  title: "Rajesh Thangaraj test",
+  title: "Rajesh Thangaraj",
   logo_name: "Rajesh Thangaraj",
   nickname: "Raji",
   subTitle:
