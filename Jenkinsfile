@@ -20,7 +20,7 @@ pipeline {
                 //sh "docker run -dp 3000:3000 getting-started"
                 // build with no cache
                 sh "docker-compose build --no-cache"
-                sh "docker-compose up"
+                sh "docker-compose up -d"
                 echo "build  process completed"
             }
         }
