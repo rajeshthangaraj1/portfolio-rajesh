@@ -1,7 +1,7 @@
 FROM node:16-alpine
 
 # set working directory
-WORKDIR /usr/src/portfolio
+WORKDIR /usr/src/testportfolio
 
 # add `/app/node_modules/.bin` to $PATH
 # ENV PATH /app/node_modules/.bin:$PATH

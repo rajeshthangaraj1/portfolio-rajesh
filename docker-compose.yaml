@@ -2,12 +2,12 @@ version: '3.7'
 
 services:
   frontend:
-    container_name: portfolio
+    container_name: testportfolio
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - '.:/usr/src/portfolio'
-      - '/usr/src/portfolio/node_modules'
+      - '.:/usr/src/testportfolio'
+      - '/usr/src/testportfolio/node_modules'
     ports:
-      - 3000:3000
+      - 3001:3000
